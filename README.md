@@ -39,8 +39,7 @@ The system follows a complete RAG pipeline:
           Answer + Source References
 ```
 
-
-Getting started
+## Getting Started
 
 1. Create a Python virtual environment (recommended):
 
@@ -64,39 +63,34 @@ set GEMINI_API_KEY=your_api_key_here
 streamlit run app/streamlit_app.py
 ```
 
-Notes
+## 📝 Notes
+
 - The original Colab notebook used during development is available in your workspace. Before publishing, ensure no secrets are included in committed notebooks.
 - This repo is a reproducible packaging of that Colab workflow into modular Python files and a small demo.
 
-Contributing
+## 🤝 Contributing
 
 - Move `RAG_repo/RAG_Project_2.ipynb` into `notebook/` if you want the full notebook included (sanitize API keys first).
 
-
-# 🤖 AI-Powered Enterprise Document Assistant using RAG
-
-An AI-powered enterprise document question-answering system built using **Retrieval-Augmented Generation (RAG)**.
-
-The application enables users to upload enterprise documents and ask natural language questions. Responses are generated using only the uploaded document content with relevant source references, reducing hallucinations and improving answer reliability.
-
----
-
-## 🚀 Features
+## 📄 Features
 
 ### 📄 Multi-Format Document Support
 
 Supports ingestion of multiple enterprise document formats:
 
-- PDF - DOCX - TXT - CSV - XLSX - PPTX
+- PDF
+- DOCX
+- TXT
+- CSV
+- XLSX
+- PPTX
 
 ---
 
-# 📌 Key Highlights
+## 📌 Key Highlights
 
 ✅ Enterprise document understanding  
 ✅ Retrieval-based question answering  
 ✅ Reduced hallucination through grounded generation  
 ✅ Persistent vector search  
-✅ Explainable answers with references  
-
----
+✅ Explainable answers with references
