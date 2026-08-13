@@ -4,25 +4,41 @@ A reproducible RAG (Retrieval-Augmented Generation) demo that processes enterpri
 
 This repository was packaged from a Colab notebook (original notebook retained separately). The original development and testing happened in Google Colab; this repo provides a modular, reproducible structure to run the pipeline locally.
 
-Quick overview
+## 🏗️ Architecture
 
-Problem
-  ↓
-PDF Upload
-  ↓
-PDF Parsing
-  ↓
-Text Chunking
-  ↓
-Sentence Transformer Embeddings
-  ↓
-ChromaDB
-  ↓
-Semantic Retrieval
-  ↓
-Gemini (LLM)
-  ↓
-Context-Aware Answer
+The system follows a complete RAG pipeline:
+
+```text
+                Documents
+                    |
+                    v
+            Document Loaders
+                    |
+                    v
+          Text Cleaning & Processing
+                    |
+                    v
+              Semantic Chunking
+                    |
+                    v
+              Embedding Model
+                    |
+                    v
+          ChromaDB Vector Database
+                    |
+                    v
+              MMR Retriever
+                    |
+                    v
+             Prompt Engineering
+                    |
+                    v
+              Gemini LLM
+                    |
+                    v
+          Answer + Source References
+```
+
 
 Getting started
 
@@ -55,3 +71,32 @@ Notes
 Contributing
 
 - Move `RAG_repo/RAG_Project_2.ipynb` into `notebook/` if you want the full notebook included (sanitize API keys first).
+
+
+# 🤖 AI-Powered Enterprise Document Assistant using RAG
+
+An AI-powered enterprise document question-answering system built using **Retrieval-Augmented Generation (RAG)**.
+
+The application enables users to upload enterprise documents and ask natural language questions. Responses are generated using only the uploaded document content with relevant source references, reducing hallucinations and improving answer reliability.
+
+---
+
+## 🚀 Features
+
+### 📄 Multi-Format Document Support
+
+Supports ingestion of multiple enterprise document formats:
+
+- PDF - DOCX - TXT - CSV - XLSX - PPTX
+
+---
+
+# 📌 Key Highlights
+
+✅ Enterprise document understanding  
+✅ Retrieval-based question answering  
+✅ Reduced hallucination through grounded generation  
+✅ Persistent vector search  
+✅ Explainable answers with references  
+
+---
