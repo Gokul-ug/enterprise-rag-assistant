@@ -1,0 +1,17 @@
+google-generativeai
+langchain
+langchain-community
+langchain-text-splitters
+langchain-google-genai
+chromadb
+sentence-transformers
+pypdf
+python-docx
+docx2txt
+openpyxl
+unstructured
+pandas
+tqdm
+langchain-huggingface
+langchain-chroma
+streamlit
